@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",                        // Spécifie la version ECMAScript que TypeScript doit cibler. ES2020 apporte des fonctionnalités modernes comme les BigInt et l'optionnal chaining.
+    "module": "commonjs",                      // Définit le système de modules à utiliser. CommonJS est utilisé par Node.js pour gérer les modules.
+    "strict": true,                            // Active le mode strict, qui regroupe plusieurs options pour renforcer la vérification des types, améliorant ainsi la robustesse du code.
+    "esModuleInterop": true,                   // Permet une meilleure interopérabilité avec les modules CommonJS, en facilitant l'importation de modules qui utilisent `module.exports`.
+    "skipLibCheck": true,                      // Ignore la vérification des types dans les fichiers de définition (.d.ts), ce qui accélère la compilation et évite des erreurs inutiles venant de bibliothèques externes.
+    "forceConsistentCasingInFileNames": true,  // Force la cohérence de la casse des noms de fichiers lors des imports, évitant ainsi les problèmes liés à la sensibilité à la casse dans les systèmes de fichiers.
+    "outDir": "./dist",                        // Spécifie le répertoire de sortie où le code JavaScript compilé sera placé. Ici, le code compilé ira dans le dossier "dist".
+    "rootDir": "./src"                         // Spécifie le répertoire racine des fichiers source TypeScript. Ici, tous les fichiers TypeScript à compiler doivent se trouver dans le dossier "src".
+  },
+  "include": ["src/**/*.ts"],                  // Indique quels fichiers TypeScript doivent être inclus dans la compilation. Ici, tous les fichiers .ts dans le dossier "src" sont inclus.
+  "exclude": ["node_modules", "dist"]          // Exclut certains dossiers de la compilation. Ici, "node_modules" (les dépendances) et "dist" (les fichiers compilés) sont exclus.
+}
