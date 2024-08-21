@@ -10,7 +10,6 @@ Ce projet est un exemple simple mais complet d'une API RESTful implémentée en 
 - [Chemin d'exécution](#chemin-dexécution)
 - [Comment ajouter d'autres modèles](#comment-ajouter-dautres-modèles)
 - [Pourquoi cette architecture ? Les principes SOLID](#pourquoi-cette-architecture--les-principes-solid)
-- [Licence](#licence)
 
 ## Installation
 
